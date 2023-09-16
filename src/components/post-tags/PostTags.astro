@@ -1,0 +1,19 @@
+---
+import './PostTags.css'
+import slugify from '../../utils/slugify'
+
+const { tags, classes } = Astro.props
+---
+
+<div class:list={['post-tags', classes]}>
+  {
+    tags.map((tag) => {
+      return (
+        <a class="post-tags__link" href={`/tag/${slugify(tag)}`}>
+          <span>#</span>
+          {tag}
+        </a>
+      )
+    })
+  }
+</div>

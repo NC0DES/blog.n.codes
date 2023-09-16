@@ -1,0 +1,36 @@
+---
+// import Image from 'astro/components/Image.astro';
+import { Image } from 'astro:assets'
+import PhotoImage from '../../assets/images/photo.png'
+import './Author.css'
+
+export interface Props {
+  showTitle: boolean
+  classes?: string
+}
+
+const { showTitle, classes } = Astro.props
+import { SITE_TITLE, PAGE_DESCRIPTION, TWITTER, GITHUB } from '../../consts'
+---
+
+<div class:list={['author', classes]}>
+  <Image
+    class="author__image"
+    alt="Author image"
+    src={PhotoImage}
+    width={180}
+    height={180}
+    blur={5}
+  />
+
+  {showTitle && <h1 class="author__site-title"> {SITE_TITLE} </h1>}
+
+  <p class="author__intro">
+    {PAGE_DESCRIPTION}
+  </p>
+
+  <p class="author__links">
+    <a href={TWITTER}>Follow on Twitter</a>
+    <a href={GITHUB}>GitHub</a>
+  </p>
+</div>
