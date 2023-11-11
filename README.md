@@ -1,73 +1,46 @@
-# Astro Starter Blog
+# [Astro](https://astro.build) Blog Template
 
-> A simple, hackable & minimalistic starter for Astro that uses Markdown for content.
+[![Screenshot](screenshot.png)](https://astro-blog-template.netlify.app/)
 
-## 🔥 Features
-- ✅ Beautiful and simple design.
-- ✅ Easy configuration
-- ✅ Markdown & MDX support
-- ✅ Tags support.
-- ✅ Dark / Light toggle.
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Uses [`astro:assets`](https://docs.astro.build/en/guides/assets/) for optimized images
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Blog drafts
+## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
 
-## 🌍 Demo URL
+## 👩‍🚀 Getting Started
 
-https://astro-starter-blog.netlify.app
-
-
-## 👨🏾‍💻 Getting started
+### Locally
 
 ```
-npm create astro@latest -- --template peoray/astro-starter-blog
+npm init astro -- --template Charca/astro-blog-template
 ```
 
-### 👨🏾‍💻 Configuration
+### On StackBlitz
 
-Edit the values in `src/consts.ts` to match your brand or company:
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/charca/astro-blog-template)
 
-```ts
+## ✨ Features:
 
-export const SITE_TITLE = "Astro Blog Starter";
-export const SITE_URL = "https://astro-starter-blog.netlify.app/";
-export const SITE_DESCRIPTION = "Welcome to my personal website!";
-export const PAGE_DESCRIPTION = "A simple, hackable & minimalistic starter for Astro that uses Markdown for content"
-export const TWITTER = "https://twitter.com/peoray_"
-export const GITHUB = "https://github.com/peoray/astro-starter-blog"
-export const AUTHOR = "Emmanuel Raymond"
-export const IMAGE = "/images/photo.png"
-export const IMAGE_ALT = "Photo of an avatar"
-
-```
-
-Change any lines or add more in the `<head>` tags in `src/components/MetaTags.astro`, like the favicon:
-
-```html
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-```
+- ✅ Astro 1.0
+- ✅ Dark Mode
+- ✅ Full Markdown support
+- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
+- ✅ RSS 2.0 generation
+- ✅ Sitemap.xml generation
 
 ## 🚀 Project Structure
 
-<!-- Inside of your Astro project, you'll see the following folders and files:
+Inside of your Astro project, you'll see the following folders and files:
 
 ```
 /
 ├── public/
-│   └── favicon.svg
+│   ├── robots.txt
+│   └── favicon.ico
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
+│   │   └── Tour.astro
 │   └── pages/
 │       └── index.astro
 └── package.json
-``` -->
+```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
@@ -79,27 +52,13 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:3030`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
 
 ## 👀 Want to learn more?
 
-Feel free to check the [Astro documentation](https://docs.astro.build) or jump into the [Discord server](https://astro.build/chat).
-
-## 💙 Acknowledgement
-
-This theme is a port of the popular [Gridsome Starter Blog](https://github.com/gridsome/gridsome-starter-blog) made by the creator of Gridsome, Tommy Vedvik.
-
-## ✨ Contributing
-
-Feel free to open an issue if you find bugs or want to request new features.
-
-## 📜 License
-
-Licensed under the [MIT License](https://opensource.org/license/mit/), Copyright © Emmanuel Raymond 2023
+Feel free to check [Astro's documentation](https://github.com/withastro/astro) or jump into Astro's [Discord server](https://astro.build/chat).
